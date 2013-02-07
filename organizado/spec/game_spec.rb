@@ -16,9 +16,7 @@ describe Game do
     @game.play(2)
     @player.health.should == @initial_health + (15 * 2)
   end
-  it "should description" do
 
-  end
   it "Should not change the player if a medium number is rolled" do
     Die.any_instance.stub(:roll).and_return(3)
     @game.play(2)
